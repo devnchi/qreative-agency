@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link"; // Add this import
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import { useMediaQuery } from '@react-hook/media-query';
@@ -119,10 +119,11 @@ export default function Home() {
         />
       </div>
 
-      {/* Link Grid - Fixed with Next.js Link components */}
+      {/* Link Grid */}
       <div className={`p-3 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left place-items-center justify-center relative z-10 pointer-events-auto ${
         isDarkMode ? "text-white" : ""
       }`}>
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <Link
           href="/who-we-are"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
@@ -132,6 +133,7 @@ export default function Home() {
           </h2>
         </Link>
 
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <Link
           href="/our-services"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
@@ -141,6 +143,7 @@ export default function Home() {
           </h2>
         </Link>
 
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <Link
           href="/our-work"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
@@ -150,6 +153,7 @@ export default function Home() {
           </h2>
         </Link>
 
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
         <Link
           href="/contact-us"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
