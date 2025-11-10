@@ -65,7 +65,7 @@ export default function Services() {
             <ServicesTable isDarkMode />
             </div>
             {/* Description on the right */}
-            <div className={`max-w-xl w-full lg:w-2/6 px-8 py-12 text-gray-800 dark:text-white ${
+            <div className={`max-w-xl w-full lg:w-2/6 py-12 lg:px-8 text-gray-800 dark:text-white ${
         isDarkMode ? "text-white" : ""
       }`}>
             <h1 className="text-4xl font-bold mb-8">Our Services</h1>
