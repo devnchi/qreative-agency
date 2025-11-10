@@ -74,7 +74,7 @@ export default function Services() {
             </p>
             <br />
             {/* Add more text content as needed */}
-            <div className="max-w-xl w-full dark:text-white mt-2 text-md">
+            <div className="max-w-xl w-full dark:text-white text-md">
               <h2 className="text-2xl pb-2 font-bold">Our Pricing</h2>
               <p>Every project we take on is unique. Our pricing reflects the scope, scale, and creative depth required to bring each vision to life. We tailor every engagement to our clients’ specific goals, ensuring thoughtful collaboration, transparency, and lasting value. Our pricing is fully customized to your needs. Whether you’re building your first product or scaling your next big idea, we design flexible engagements that align with your goals, resources, and timeline. No two projects are alike—and neither are our partnerships. Reach out to us for a quote.</p>
               <br />   
