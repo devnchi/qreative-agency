@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link"; // Add this import
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import { useMediaQuery } from '@react-hook/media-query';
@@ -118,49 +119,48 @@ export default function Home() {
         />
       </div>
 
-      {/* Link Grid - Add pointer-events-auto and higher z-index */}
+      {/* Link Grid - Fixed with Next.js Link components */}
       <div className={`p-3 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left place-items-center justify-center relative z-10 pointer-events-auto ${
         isDarkMode ? "text-white" : ""
       }`}>
-        <a
+        <Link
           href="/who-we-are"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
         >
           <h2 className={`sm:text-xl m-2 lg:text-2xl font-mono font-bold`}>
             WHO WE ARE
           </h2>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/our-services"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
         >
           <h2 className={`sm:text-xl m-2 lg:text-2xl font-mono font-bold`}>
             OUR SERVICES
           </h2>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/our-work"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
         >
           <h2 className={`sm:text-xl m-2 lg:text-2xl font-mono font-bold`}>
             OUR WORK
           </h2>
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="/contact-us"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 hover:text-orange-400 relative z-20"
         >
           <h2 className={`sm:text-xl m-2 lg:text-2xl font-mono font-bold`}>
             CONTACT US
           </h2>
-        </a>
+        </Link>
       </div>
 
       <Footer isDarkMode={isDarkMode} />
     </main>
   );
 }
-
