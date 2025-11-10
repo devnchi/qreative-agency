@@ -49,7 +49,7 @@ export default function WhoWeArePage() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col p-32 ${inter.className} ${isDarkMode ? 'dark:bg-white' : 'bg-white'}`}
+      className={`flex min-h-screen flex-col p-24 ${inter.className} ${isDarkMode ? 'dark:bg-white' : 'bg-white'}`}
       style={backgroundStyle}
     >
      <NavBar 

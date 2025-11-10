@@ -61,7 +61,7 @@ export default function Services() {
     
         <div className="flex flex-wrap justify-center md:p-24 sm:p-6 font-mono mt-6">
             {/* Services table on the left */}
-            <div className="w-full lg:w-3/5 lg:px-8 lg:py-12">
+            <div className="w-full lg:w-3/5 lg:py-8">
             <ServicesTable isDarkMode />
             </div>
             {/* Description on the right */}

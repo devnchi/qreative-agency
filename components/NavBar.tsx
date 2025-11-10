@@ -56,21 +56,21 @@ const NavBar: React.FC<NavBarProps> = ({ isDarkMode, onDarkModeToggle }) => {
           </Link>
         </li>
         <li>
-          <Link href="/our-services" className={`p-1 text-xs sm:text-sm lg:text-lg hover:text-orange-300 font-mono font-bold ${
+          <Link href="/our-services" className={`p-1 text-xs lg:text-lg hover:text-orange-300 font-mono font-bold ${
             isDarkMode ? 'text-white' : 'text-black'
           }`}>
             OUR SERVICES
           </Link>
         </li>
         <li>
-          <Link href="/our-work" className={`p-1 text-xs sm:text-sm lg:text-lg hover:text-orange-300 font-mono font-bold ${
+          <Link href="/our-work" className={`p-1 text-xs lg:text-lg hover:text-orange-300 font-mono font-bold ${
             isDarkMode ? 'text-white' : 'text-black'
           }`}>
             OUR WORK
           </Link>
         </li>
         <li>
-          <Link href="/contact-us" className={`p-1 text-xs sm:text-sm lg:text-lg hover:text-orange-300 font-mono font-bold ${
+          <Link href="/contact-us" className={`p-1 text-xs lg:text-lg hover:text-orange-300 font-mono font-bold ${
             isDarkMode ? 'text-white' : 'text-black'
           }`}>
             CONTACT US

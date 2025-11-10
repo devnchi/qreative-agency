@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col p-24 ${inter.className} ${isDarkMode ? 'dark:bg-white' : 'bg-white'} `}
+      className={`flex min-h-screen flex-col p-10 lg:p-20 ${inter.className} ${isDarkMode ? 'dark:bg-white' : 'bg-white'} `}
       style={backgroundStyle}
     >
      <NavBar 
@@ -56,13 +56,13 @@ export default function Contact() {
             <div className={`max-w-xl w-full lg:w-2/6 px-5 py-12 text-gray-800 dark:text-white ${
         isDarkMode ? "text-white" : ""
       }`}>
-            <h1 className="text-4xl font-mono font-bold mb-8">Want to work with us?</h1>
-            <p className="text-lg font-mono">
+            <h1 className="text-2xl pt-4 md:text-4xl font-mono font-bold mb-8">Want to work with us?</h1>
+            <p className="text-md md:text-lg font-mono">
               We are a founder-led creative technology studio helping innovators design, build, and scale their next big idea. From brand to AI, we bring vision to life—one product at a time. We build what doesn’t yet exist or improve on what is working for you.
             </p>
             </div>
             {/* Services table on the right */}
-            <div className="max-w-2xl w-full md:w-3/5 lg:ml-10 lg:m-6 lg:w-4/6">
+            <div className="max-w-2xl w-full sm:w-5/5 md:w-3/5 lg:ml-10 lg:m-6 lg:w-4/6">
             <ContactForm />
             </div>
         </div>
