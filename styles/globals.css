@@ -31,3 +31,51 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  35% {
+      transform: translateY(6px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+  transition: box-shadow 3s ease;
+}
+
+/* styles/about-us.module.css */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  animation: slide-in 1s ease;
+}
+
+@keyframes slide-in {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}

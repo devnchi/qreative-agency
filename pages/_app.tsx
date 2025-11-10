@@ -1,6 +1,17 @@
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import { DarkModeProvider } from '@/providers/DarkModeContext';
+import { AppProps } from 'next/app';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+<link rel="icon" href="/qa-icon.png" sizes="any" />
+
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <DarkModeProvider>
+      <Component {...pageProps} />
+    </DarkModeProvider>
+  );
 }
+
+export default MyApp;
+
