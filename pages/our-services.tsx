@@ -51,7 +51,7 @@ export default function Services() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col p-20 mt-6 ${inter.className} ${isDarkMode ? 'dark:bg-white' : 'bg-white'}`}
+      className={`flex min-h-screen flex-col p-20 ${inter.className} ${isDarkMode ? 'dark:bg-white' : 'bg-white'}`}
       style={backgroundStyle}
     >
      <NavBar 
